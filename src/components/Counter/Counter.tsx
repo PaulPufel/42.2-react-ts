@@ -1,5 +1,6 @@
 import "./styles.css";
 import Button from "../Button/Button";
+
 //Шаг 1 - импорт хука useState из react
 import { useState } from "react";
 
@@ -16,12 +17,13 @@ function Counter() {
   // const setCount = result[1];
   // console.log(setCount);
 
-  //Шаг 3 - необходимо прописать функции, которые будут менять состояние. Внутри этих функций нужно использовать setCount
-  const onPlusClick = () => {
+  //Шаг 3 - необходимо прописать функции, которые будут менять состояние. 
+  //Внутри этих функций нужно использовать setCount
+  const onPlusClick = ():void => {
     setCount((prevValue) => prevValue + 1);
   };
 
-  const onMinusClick = () => {
+  const onMinusClick = ():void =>{
     setCount((prevValue) => prevValue - 1);
   };
 
