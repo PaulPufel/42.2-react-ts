@@ -1,6 +1,7 @@
 import Button from "../Button/Button";
 import Input from "../Input/Input";
 import "./styles.css";
+import type {LoginFormProps} from './types';
 
 function LoginForm() {
   return (
@@ -22,7 +23,7 @@ function LoginForm() {
           label="Password"
         />
       </div>
-      <Button name="Login" type="submit" />
+      <Button name="Login" type="submit" onClick={}/>
     </form>
   );
 }
