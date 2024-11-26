@@ -1,9 +1,7 @@
-type InputProps = { 
-    id: string;
+export interface InputProps { 
+    id?: string;
     name: string;
-    type: string; 
-    placeholder: string;
-    label: string;
+    type?: 'text' | 'email' | 'password' | 'tel'; 
+    placeholder?: string;
+    label?: string;
   }
-  
- export type {InputProps};

@@ -1,6 +1,5 @@
 import "./styles.css";
 import Button from "../Button/Button";
-import type {Counter} from './types';
 
 //Шаг 1 - импорт хука useState из react
 import { useState } from "react";
@@ -20,11 +19,11 @@ function Counter() {
 
   //Шаг 3 - необходимо прописать функции, которые будут менять состояние. 
   //Внутри этих функций нужно использовать setCount
-  const onPlusClick:() => void = () => {
+  const onPlusClick = ():void => {
     setCount((prevValue) => prevValue + 1);
   };
 
-  const onMinusClick: () => void = () => {
+  const onMinusClick = ():void =>{
     setCount((prevValue) => prevValue - 1);
   };
 
