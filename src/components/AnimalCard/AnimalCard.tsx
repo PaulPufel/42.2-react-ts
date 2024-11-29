@@ -1,25 +1,14 @@
-import "./styles.css";
+import "./styles.ts";
 import { AnimalCardProps } from './types';
-
-// interface Animal {
-//   name: string
-//   species: string
-//   role: string
-//   skills: string[]
-//   image: string
-// }
-
-// interface AnimalCardProps {
-//   animalData: Animal
-// }
+import {AnimalCardWrapper, AnimalImage, AnimalName, AnimalSpecies} from './styles';
 
 function AnimalCard({ animalData }: AnimalCardProps) {
   return (
-    <div className="animal-card-wrapper">
-      <h3>{animalData.name}</h3>
-      <div>{animalData.species}</div>
-      <img src={animalData.image} />
-    </div>
+    <AnimalCardWrapper>
+      <AnimalName>{animalData.name}</AnimalName>
+      <AnimalSpecies>{animalData.species}</AnimalSpecies>
+      <AnimalImage src={animalData.image}/>
+    </AnimalCardWrapper>
   );
 }
 
