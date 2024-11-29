@@ -5,9 +5,10 @@ import './App.css';
 // import Lesson07 from './lessons/Lesson07/Lesson07';
 
 //homeworks
-import Homework07 from './homeworks/Homework07/Homeworks07';
+import Homework07 from './homeworks/Homework07/Homework07';
 
 //consultations
+// import Consultation04 from './consultations/Consultation04/Consultation04';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       {/* <Lesson06 /> */}
       {/* <Lesson07 /> */}
       <Homework07 />
-
+      <Consultation04 />
+      
     </div>
   );
 }
