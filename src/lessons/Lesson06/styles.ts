@@ -1,8 +1,7 @@
 import styled from "@emotion/styled";
 
-export const Homework07Container = styled.div`
+export const Lesson06Container = styled.div`
   display: flex;
-  width: 300px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -10,3 +9,5 @@ export const Homework07Container = styled.div`
   flex: 1;
   padding-top: 30px;
 `
+
+

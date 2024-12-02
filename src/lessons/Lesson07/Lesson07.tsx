@@ -1,5 +1,5 @@
-import './styles.css';
-import { BoxInfo } from './styles';
+import './styles.ts';
+import { BoxInfo } from './types';
 
 function Lesson07() {
   //Generic
