@@ -123,7 +123,7 @@ function Lesson06() {
   }
 
   console.log(animal);
-  
+
 
   interface Zoo {
     animalData: Animal

@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 interface MainButtonProps {
   disabled: boolean;
@@ -10,10 +10,11 @@ export const MainButton = styled.button<MainButtonProps>`
   outline: none;
   border: none;
   padding: 20px;
-  background: ${({ disabled }) => disabled ? '#e1e3de' : '#1f27f5'};
+  background: ${({ disabled }) => disabled ? '#b8b6ae' : '#1f27f5'};
   border-radius: 4px;
   color: white;
   font-family: Lato, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   cursor: ${({ disabled }) => disabled ? 'auto' : 'pointer'};
 `; 
+

@@ -1,6 +1,6 @@
 import { ProductionItemWrapper } from './styles'
 
-function ProductItem ({product}: any {
+function ProductItem ({product}: any){
   return(
     <ProductionItemWrapper>
       <div>{product}</div>
@@ -8,4 +8,4 @@ function ProductItem ({product}: any {
   )
 }
 
-export default ProductItem;
+export default ProductItem

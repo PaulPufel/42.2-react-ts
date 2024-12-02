@@ -31,10 +31,10 @@ function Feedback() {
           <Result>{likes}</Result>
           <Button name="LIKE" onClick={addLike} />
         </LikeDislikeContainer>
-        <div className="like-dislike-container">
-          <div className="result">{dislikes}</div>
+        <LikeDislikeContainer>
+          <Result>{dislikes}</Result>
           <Button name="DISLIKE" onClick={addDislike} />
-        </div>
+        </LikeDislikeContainer>
       </FeedbackResultContainer>
       <Button name="RESET RESULTS" onClick={resetResults} />
     </FeedbackContainer>

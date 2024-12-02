@@ -20,4 +20,3 @@ export const CounterResult = styled.div`
     font-weight: bold;
     color: rgb(19, 19, 87);
 `;
-  
