@@ -1,6 +1,6 @@
 import "./styles.ts";
-import { InputProps } from './types';
-import { InputContainer, InputElement, Label } from './styles';
+import { InputProps } from './types'
+import {InputContainer, InputElement, Label} from './styles';
 
 function Input({ name, id, type = 'text', placeholder, label }: InputProps) {
   return (

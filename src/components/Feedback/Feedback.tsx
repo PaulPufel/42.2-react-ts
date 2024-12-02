@@ -1,10 +1,9 @@
 import { useState } from "react";
-import Button from "../Button/Button";
+import Button from "..//Button/Button";
 import "./styles.ts";
-import {
-  FeedbackContainer,
-  FeedbackResultContainer,
-  LikeDislikeContainer,
+import {FeedbackContainer, 
+  FeedbackResultContainer, 
+  LikeDislikeContainer, 
   Result
 } from './styles';
 

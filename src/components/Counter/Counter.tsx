@@ -1,5 +1,5 @@
 import "./styles.ts";
-import Button from "../Button/Button";
+import Button from "..//Button/Button"
 //Шаг 1 - импорт хука useState из react
 // import { useState } from "react";
 import { CounterContainer, ButtonWrapper, CounterResult } from './styles';

@@ -16,6 +16,5 @@ export const MainButton = styled.button<MainButtonProps>`
   font-family: Lato, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   cursor: ${({ disabled }) => disabled ? 'auto' : 'pointer'};
-`;
-
+`; 
 
