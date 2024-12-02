@@ -8,6 +8,6 @@ export const Lesson06Container = styled.div`
   gap: 30px;
   flex: 1;
   padding-top: 30px;
-`
+`;
 
 

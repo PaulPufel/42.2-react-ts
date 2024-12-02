@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Button from "../Button/Button";
 import "./styles.ts";
-import {
+import { 
   FeedbackContainer,
   FeedbackResultContainer,
   LikeDislikeContainer,
@@ -43,3 +43,4 @@ function Feedback() {
 }
 
 export default Feedback;
+
