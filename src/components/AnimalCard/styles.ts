@@ -17,5 +17,5 @@ export const AnimalName = styled.h3``;
 export const AnimalSpecies = styled.div``;
 
 export const AnimalImage = styled.img`
-  width: 100px;
+width: 100px;
 `;
