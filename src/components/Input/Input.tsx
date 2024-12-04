@@ -3,6 +3,8 @@ import { InputProps } from './types'
 import {InputContainer, InputElement, Label} from './styles';
 
 function Input({ name, id, type = 'text', placeholder, label }: InputProps) {
+  console.log('Input render or re-render');
+
   return (
     <InputContainer>
       {/* Пример оператора условного рендеринга */}
