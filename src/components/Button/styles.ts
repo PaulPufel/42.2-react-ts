@@ -5,7 +5,7 @@ interface MainButtonProps {
 }
 
 export const MainButton = styled.button<MainButtonProps>`
-  width: 100%;
+  width: 800px;
   height: 70px;
   outline: none;
   border: none;
@@ -14,7 +14,7 @@ export const MainButton = styled.button<MainButtonProps>`
   border-radius: 4px;
   color: white;
   font-family: Lato, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
+  font-size: 24px;
   cursor: ${({ disabled }) => disabled ? 'auto' : 'pointer'};
 `; 
 

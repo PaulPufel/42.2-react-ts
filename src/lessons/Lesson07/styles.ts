@@ -9,4 +9,4 @@ export const Homework07Container = styled.div`
   gap: 30px;
   flex: 1;
   padding-top: 30px;
-`
+`;
