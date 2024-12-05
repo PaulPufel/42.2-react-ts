@@ -2,8 +2,8 @@ import "./styles.ts";
 import { InputProps } from './types'
 import {InputContainer, InputElement, Label} from './styles';
 
-function Input({ name, id, type = 'text', placeholder, label }: InputProps) {
-  console.log('Input render or re-render');
+function Input({ name, id, type = 'text', placeholder, label, onChange }: InputProps) {
+  // console.log('Input render or re-render');
 
   return (
     <InputContainer>
@@ -14,7 +14,8 @@ function Input({ name, id, type = 'text', placeholder, label }: InputProps) {
         name={name}
         type={type}
         placeholder={placeholder}
-        className="input-element"
+        // className="input-element"
+        onChange={onChange}
       />
     </InputContainer>
   );
