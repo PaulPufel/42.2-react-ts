@@ -8,10 +8,11 @@ import GlobalStyles from './styles/GlobalStyles';
 
 //homeworks
 // import Homework07 from './homeworks/Homework07/Homework07';
+import Homework09cw from './homeworks/Homework09cw/Homework09cw';
 
 //consultations
 // import Consultation04 from './consultations/Consultation04/Consultation04';
-import Consultation05 from './consultations/Consultation05/Consultation05';
+// import Consultation05 from './consultations/Consultation05/Consultation05';
 
 function App() {
   return (
@@ -22,8 +23,9 @@ function App() {
       {/* <Lesson08 /> */}
       {/* <Lesson09 /> */}
       {/* <Homework07 /> */}
+      <Homework09cw />
       {/* <Consultation04 /> */}
-      <Consultation05 />
+      {/* <Consultation05 /> */}
      
     </>
   );
