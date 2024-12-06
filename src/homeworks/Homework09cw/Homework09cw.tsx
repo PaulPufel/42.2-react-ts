@@ -9,7 +9,9 @@ function Homework09cw() {
   const [dogImageUrl, setDogImageUrl] = useState<string | undefined>(undefined);
   const [error, setError] = useState<any>(undefined);
   const [isLoading, setIsLoading] = useState<boolean>(false);
+
   const DOG_URL = 'https://dog.ceo/api/breeds/image/random';
+
   const onSearchChange = (event: ChangeEvent<HTMLInputElement>) => {
     setSearch(event.target.value)
   }
@@ -39,6 +41,7 @@ function Homework09cw() {
   useEffect(() => {
     getDogPhoto()
   }, [search])
+  
   return (
     <Homework09Component>
       <Input name='search' placeholder="Enter word" value={search} onChange={onSearchChange} />
