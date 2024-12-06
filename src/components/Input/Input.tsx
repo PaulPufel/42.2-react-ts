@@ -12,7 +12,6 @@ function Input({ name, id, type = 'text', placeholder, label, value, onChange }:
         name={name}
         type={type}
         value={value}
-        onChange={onChange} 
         placeholder={placeholder}
         onChange={onChange}
       />

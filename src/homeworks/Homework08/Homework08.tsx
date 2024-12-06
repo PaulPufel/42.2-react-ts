@@ -17,7 +17,6 @@ const input2OnChange = (event: ChangeEvent<HTMLInputElement>) => {
 }
 
 const handleSubmit = (): void => {
-  // setResults(true);
    setResults(!results);
 }
 
@@ -47,10 +46,8 @@ return (
     </FormWrapper>
     
   { results && (<ResultWrapper>
-     {/* <ResultBlock>{input1}</ResultBlock>
-     <ResultBlock>{input2}</ResultBlock> */}
-     <ResultBlock><strong>Input 1:</strong> {input1}</ResultBlock>
-     <ResultBlock><strong>Input 2:</strong> {input2}</ResultBlock>
+     <ResultBlock>{input1}</ResultBlock>
+     <ResultBlock>{input2}</ResultBlock> 
    </ResultWrapper>)}
 
    </Homework08Container>
