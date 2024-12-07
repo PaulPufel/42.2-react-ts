@@ -10,6 +10,7 @@ function Homework09cw() {
   const [error, setError] = useState<any>(undefined);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const DOG_URL = 'https://dog.ceo/api/breeds/image/random';
+  
   const onSearchChange = (event: ChangeEvent<HTMLInputElement>) => {
     setSearch(event.target.value)
   }
@@ -29,6 +30,7 @@ function Homework09cw() {
       //    email: 'bob@gmail.com'
       // });
       setDogImageUrl(response.data.message)
+
     } catch (error: any) {
       // console.log(error);
       setError(error)
@@ -49,4 +51,4 @@ function Homework09cw() {
     </Homework09Component>
   )
 }
-export default Homework09cw;  
+export default Homework09cw; 
