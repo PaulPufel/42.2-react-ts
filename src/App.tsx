@@ -5,12 +5,13 @@ import GlobalStyles from './styles/GlobalStyles';
 // import Lesson07 from './lessons/Lesson07/Lesson07';
 // import Lesson08 from './lessons/Lesson08/Lesson08';
 // import Lesson09 from 'lessons/Lesson09/Lesson09';
-import Lesson10 from 'lessons/Lesson10/Lesson10';
+// import Lesson10 from 'lessons/Lesson10/Lesson10';
 
 //homeworks
 // import Homework07 from './homeworks/Homework07/Homework07';
 // import Homework08 from "./homeworks/Homework08/Homework08";
 // import Homework09cw from './homeworks/Homework09cw/Homework09cw';
+import Homework10 from 'homeworks/Homework10/Homework10';
 
 
 //consultations
@@ -25,10 +26,11 @@ function App() {
       {/* <Lesson07 /> */}
       {/* <Lesson08 /> */}
       {/* <Lesson09 /> */}
-      <Lesson10 />
+      {/* <Lesson10 /> */}
       {/* <Homework07 /> */}
       {/* <Homework08 /> */}
       {/* <Homework09cw /> */}
+      <Homework10 />
       {/* <Consultation04 /> */}
       {/* <Consultation05 /> */}
      
