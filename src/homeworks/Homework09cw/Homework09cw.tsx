@@ -9,9 +9,7 @@ function Homework09cw() {
   const [dogImageUrl, setDogImageUrl] = useState<string | undefined>(undefined);
   const [error, setError] = useState<any>(undefined);
   const [isLoading, setIsLoading] = useState<boolean>(false);
-
   const DOG_URL = 'https://dog.ceo/api/breeds/image/random';
-
   const onSearchChange = (event: ChangeEvent<HTMLInputElement>) => {
     setSearch(event.target.value)
   }
@@ -21,7 +19,6 @@ function Homework09cw() {
   const getDogPhoto = async () => {
     setDogImageUrl(undefined);
     setError(undefined)
-
     try {
       setIsLoading(true)
       const response = await axios.get(DOG_URL);
@@ -41,7 +38,6 @@ function Homework09cw() {
   useEffect(() => {
     getDogPhoto()
   }, [search])
-  
   return (
     <Homework09Component>
       <Input name='search' placeholder="Enter word" value={search} onChange={onSearchChange} />
@@ -52,4 +48,4 @@ function Homework09cw() {
     </Homework09Component>
   )
 }
-export default Homework09cw;  
+export default Homework09cw; 
