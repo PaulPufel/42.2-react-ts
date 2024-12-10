@@ -10,7 +10,6 @@ function Homework09cw() {
   const [error, setError] = useState<any>(undefined);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const DOG_URL = 'https://dog.ceo/api/breeds/image/random';
-  
   const onSearchChange = (event: ChangeEvent<HTMLInputElement>) => {
     setSearch(event.target.value)
   }
@@ -20,7 +19,6 @@ function Homework09cw() {
   const getDogPhoto = async () => {
     setDogImageUrl(undefined);
     setError(undefined)
-
     try {
       setIsLoading(true)
       const response = await axios.get(DOG_URL);
@@ -30,7 +28,6 @@ function Homework09cw() {
       //    email: 'bob@gmail.com'
       // });
       setDogImageUrl(response.data.message)
-
     } catch (error: any) {
       // console.log(error);
       setError(error)
