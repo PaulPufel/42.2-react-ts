@@ -5,7 +5,7 @@ interface MainButtonProps {
 }
 
 export const MainButton = styled.button<MainButtonProps>`
-  width: 800px;
+  width: 100%;
   height: 70px;
   outline: none;
   border: none;
