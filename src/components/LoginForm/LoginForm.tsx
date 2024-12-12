@@ -1,6 +1,5 @@
 import { useFormik } from "formik";
 import * as Yup from 'yup';
-
 import Button from "../Button/Button";
 import Input from "../Input/Input";
 import "./styles.ts";
@@ -26,8 +25,8 @@ function LoginForm() {
     //   .typeError('Password must be number')
     //   .test('Check min password length', 'Min 10 symbols', value => String(value).length >= 10)
     //   .test('Check max password length', 'Max 20 symbols', value => String(value).length <= 20)
-    //проверки max и min работают с числовыми значениями и 
-    //они указывает на минимальное и минимальное значение в поле(!не количество сиволов)
+    // проверки max и min работают с числовыми значениями и они указывают 
+    // на минимальное и максимальное значения в поле(!не количество символов)
     // .max(150, 'Max 150')
     // .min(18, 'Min 18')
     [LOGIN_FORM_NAMES.USER_NAME]: Yup.string()
