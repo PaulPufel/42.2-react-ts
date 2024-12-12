@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://github.com/PaulPufel/42.2-react-ts.git",
+  "homepage": "https://paulpufel.github.io/42.2-react-ts/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.5",
