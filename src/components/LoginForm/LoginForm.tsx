@@ -1,10 +1,9 @@
 import { useFormik } from "formik";
-import * as Yup from 'yup';
-
+import * as Yup from "yup";
 import Button from "../Button/Button";
 import Input from "../Input/Input";
 import "./styles.ts";
-import { LoginFormWrapper, LoginFormTitle, InputsContainer } from './styles';
+import { LoginFormWrapper, LoginFormTitle, InputsContainer } from "./styles";
 import { LoginFormValue, LOGIN_FORM_NAMES } from "./types";
 
 function LoginForm() {
