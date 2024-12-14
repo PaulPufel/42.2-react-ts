@@ -1,4 +1,9 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from 'components/Layout/Layout';
 import GlobalStyles from './styles/GlobalStyles';
+import About from 'pages/About/About';
+import Home from 'pages/Home/Home';
+import Users from 'pages/Users/Users';
 
 //lessons
 // import Lesson06 from './lessons/Lesson06/Lesson06';
@@ -14,6 +19,7 @@ import GlobalStyles from './styles/GlobalStyles';
 // import Homework09cw from './homeworks/Homework09cw/Homework09cw';
 // import Homework09 from 'homeworks/Homework09/Homework09';
 // import Homework10 from 'homeworks/Homework10/Homework10';
+// import Homework11cw from 'homeworks/Homework11cw/Homework11cw';
 import Homework11 from 'homeworks/Homework11/Homework11';
 
 //consultations
@@ -22,8 +28,16 @@ import Homework11 from 'homeworks/Homework11/Homework11';
 
 function App() {
   return (
-    <>
+    <BrowserRouter> 
       <GlobalStyles />
+       <Layout>
+         <Routes>
+           <Route path='/' element={<Home />} />
+           <Route path='/about' element={<About />} />
+           <Route path='/users' element={<Users />} />
+           <Route path='*' element='Page not found' />
+         </Routes> 
+       </Layout>
       {/* <Lesson06 /> */}
       {/* <Lesson07 /> */}
       {/* <Lesson08 /> */}
@@ -35,11 +49,13 @@ function App() {
       {/* <Homework09cw /> */}
       {/* <Homework09 /> */}
       {/* <Homework10 /> */}
-      <Homework11 />
+      {/* <Homework11cw /> */}
+           <Homework11 />
       {/* <Consultation04 /> */}
       {/* <Consultation05 /> */}
-    </>
+    </BrowserRouter> 
   );
 }
+
 
 export default App;
