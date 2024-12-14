@@ -1,14 +1,16 @@
 export interface EmployeeFormValue {
-    first_name: string,
-    last_name: string,
-    age: number,
-    job_title: string;
+    firstName: string
+    lastName: string
+    age: string
+    jobTitle: string
+    agree: boolean
   }
   
-  export enum LOGIN_FORM_NAMES {
-    FIRST_NAME = 'first_name',
-    LAST_NAME = 'last_name',
+  export enum EMPLOYEE_FORM_NAMES {
+    FIRST_NAME = 'firstName',
+    LAST_NAME = 'lastName',
     AGE = "age",
-    JOB_TITLE = "job_title"
+    JOB_TITLE = "jobTitle",
+    AGREEMENT = "agree",
   }
   
