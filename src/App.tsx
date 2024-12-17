@@ -20,6 +20,7 @@ import Users from 'pages/Users/Users';
 // import Homework09 from 'homeworks/Homework09/Homework09';
 // import Homework10 from 'homeworks/Homework10/Homework10';
 // import Homework11cw from 'homeworks/Homework11cw/Homework11cw';
+import Homework11 from 'homeworks/Homework11/Homework11';
 
 //consultations
 // import Consultation04 from './consultations/Consultation04/Consultation04';
@@ -49,6 +50,7 @@ function App() {
       {/* <Homework09 /> */}
       {/* <Homework10 /> */}
       {/* <Homework11cw /> */}
+           <Homework11 />
       {/* <Consultation04 /> */}
       {/* <Consultation05 /> */}
     </BrowserRouter> 
