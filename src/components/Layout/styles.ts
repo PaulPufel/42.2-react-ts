@@ -16,10 +16,17 @@ export const Header = styled.header`
   color: white;
 `
 export const LogoContainer = styled.div`
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 16px;
+ font-weight: bold;
+ color: red;
  width: 70px;
  height: 70px;
- background-color: white;
  border-radius: 50%;
+ background-color: white;
+ cursor: pointer;
 `
 export const NavContainer = styled.nav`
  display: flex;
@@ -41,6 +48,7 @@ export const Footer = styled.footer`
   align-items: center;
   width: 100%;
   padding: 20px;
+  font-size: 20px;
   background-color: rebeccapurple;
   color: white;
 `
