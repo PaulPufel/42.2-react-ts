@@ -9,6 +9,10 @@ import Clients from 'pages/Clients/Clients'
 import Avacon from 'pages/Clients/components/Avacon/Avacon';
 import Netflix from 'pages/Clients/components/Netflix/Netflix';
 import Rebax from 'pages/Clients/components/Rebax/Rebax';
+import ClientsCw from 'pages/ClientsCw/ClientsCw';
+import Amazon from 'pages/ClientsCw/components/Amazon/Amazon';
+import Facebook from 'pages/ClientsCw/components/Facebook/Facebook';
+import Google from 'pages/ClientsCw/components/Google/Google';
 
 //lessons
 // import Lesson06 from './lessons/Lesson06/Lesson06';
@@ -17,6 +21,8 @@ import Rebax from 'pages/Clients/components/Rebax/Rebax';
 // import Lesson09 from 'lessons/Lesson09/Lesson09';
 // import Lesson10 from 'lessons/Lesson10/Lesson10';
 // import Lesson11 from 'lessons/Lesson11/Lesson11';
+import Lesson13 from 'lessons/Lesson13/Lesson13';
+
 
 //homeworks
 // import Homework07 from './homeworks/Homework07/Homework07';
@@ -44,6 +50,11 @@ function App() {
            <Route path="/clients/avacon" element={<Avacon />} />
            <Route path="/clients/netflix" element={<Netflix />} />
            <Route path="/clients/rebax" element={<Rebax />} />
+           <Route path="/clientsCw" element={<ClientsCw />} />
+           <Route path='/clientsCw/amazon' element={<Amazon />} />
+           <Route path='/clientsCw/facebook' element={<Facebook />} />
+           <Route path='/clientsCw/google' element={<Google />} />
+           <Route path='/lesson13' element={<Lesson13 />} />
            <Route path='*' element='Page not found' />
          </Routes> 
        </Layout>
