@@ -1,9 +1,14 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import Layout from 'components/Layout/Layout';
 import GlobalStyles from './styles/GlobalStyles';
 import About from 'pages/About/About';
-import Home from 'pages/Home/Home';
 import Users from 'pages/Users/Users';
+import Home from 'pages/Home/Home';
+import Clients from "pages/Clients/Clients";
+import Avacon from 'pages/Clients/components/Avacon/Avacon';
+import Netflix from 'pages/Clients/components/Netflix/Netflix';
+import Rebax from 'pages/Clients/components/Rebax/Rebax';
 
 //lessons
 // import Lesson06 from './lessons/Lesson06/Lesson06';
@@ -35,6 +40,10 @@ function App() {
            <Route path='/' element={<Home />} />
            <Route path='/about' element={<About />} />
            <Route path='/users' element={<Users />} />
+           <Route path="/clients" element={<Clients />} />
+           <Route path="/clients/avacon" element={<Avacon />} />
+           <Route path="/clients/netflix" element={<Netflix />} />
+           <Route path="/clients/rebax" element={<Rebax />} />
            <Route path='*' element='Page not found' />
          </Routes> 
        </Layout>
@@ -56,6 +65,5 @@ function App() {
     </BrowserRouter> 
   );
 }
-
 
 export default App;
