@@ -18,7 +18,7 @@ export const NavBox = styled.div`
   background: yellow;
 `
 
-export const StyledNavLink = styled(NavLink)`
+export const StyledLink = styled(NavLink)`
   text-decoration: none;
   font-size: 30px;
   color: black;
