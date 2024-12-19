@@ -4,8 +4,8 @@ import Layout from 'components/Layout/Layout';
 import GlobalStyles from './styles/GlobalStyles';
 import About from 'pages/About/About';
 import Users from 'pages/Users/Users';
-import Home from 'pages/Home/Home';
-import Clients from "pages/Clients/Clients";
+import Home from 'pages/Home/Home'
+import Clients from 'pages/Clients/Clients'
 import Avacon from 'pages/Clients/components/Avacon/Avacon';
 import Netflix from 'pages/Clients/components/Netflix/Netflix';
 import Rebax from 'pages/Clients/components/Rebax/Rebax';
@@ -25,7 +25,7 @@ import Rebax from 'pages/Clients/components/Rebax/Rebax';
 // import Homework09 from 'homeworks/Homework09/Homework09';
 // import Homework10 from 'homeworks/Homework10/Homework10';
 // import Homework11cw from 'homeworks/Homework11cw/Homework11cw';
-import Homework11 from 'homeworks/Homework11/Homework11';
+// import Homework11 from 'homeworks/Homework11/Homework11';
 
 //consultations
 // import Consultation04 from './consultations/Consultation04/Consultation04';
@@ -59,7 +59,7 @@ function App() {
       {/* <Homework09 /> */}
       {/* <Homework10 /> */}
       {/* <Homework11cw /> */}
-           <Homework11 />
+      {/* <Homework11 /> */}
       {/* <Consultation04 /> */}
       {/* <Consultation05 /> */}
     </BrowserRouter> 
