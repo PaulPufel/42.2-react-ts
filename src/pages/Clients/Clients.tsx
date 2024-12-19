@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Button from "components/Button/Button";
-import { ClientsPage, NavBox, StyledNavLink} from "./styles";
+import { ClientsPage, NavBox, StyledLink} from "./styles";
 
 function Clients() {
   const navigate = useNavigate();
@@ -11,15 +11,15 @@ function Clients() {
     <ClientsPage>
        Content Clients page
         <NavBox>
-           <StyledNavLink to='/clients/avacon' style={({ isActive }) => ({ textDecoration: isActive ? 'underline' : 'none' })}>
+           <StyledLink to='/clients/avacon'>Avacon<StyledLink> 
               Avacon
-            </StyledNavLink>      
-           <StyledNavLink to='/clients/rebax' style={({ isActive }) => ({ textDecoration: isActive ? 'underline' : 'none' })}>
+            </StyledLink>      
+           <StyledLink to='/clients/rebax' >Rebax<StyledLink>
               Rebax
-           </StyledNavLink>
-           <StyledNavLink to='/clients/netflix' style={({ isActive }) => ({ textDecoration: isActive ? 'underline' : 'none' })}>
+           </StyledLink>
+           <StyledLink to='/clients/netflix' >Netflix<StyledLink>
               Netflix
-           </StyledNavLink>
+           </StyledLink>
         </NavBox>
       <Button name="GO TO HOME" onClick={goBack} />
     </ClientsPage>
