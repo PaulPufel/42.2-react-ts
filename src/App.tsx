@@ -23,7 +23,6 @@ import Google from 'pages/ClientsCw/components/Google/Google';
 // import Lesson11 from 'lessons/Lesson11/Lesson11';
 import Lesson13 from 'lessons/Lesson13/Lesson13';
 
-
 //homeworks
 // import Homework07 from './homeworks/Homework07/Homework07';
 // import Homework08 from "./homeworks/Homework08/Homework08";
@@ -32,6 +31,7 @@ import Lesson13 from 'lessons/Lesson13/Lesson13';
 // import Homework10 from 'homeworks/Homework10/Homework10';
 // import Homework11cw from 'homeworks/Homework11cw/Homework11cw';
 // import Homework11 from 'homeworks/Homework11/Homework11';
+import Homework13 from 'homeworks/Homework13/Homework13';
 
 //consultations
 // import Consultation04 from './consultations/Consultation04/Consultation04';
@@ -55,6 +55,7 @@ function App() {
            <Route path='/clientsCw/facebook' element={<Facebook />} />
            <Route path='/clientsCw/google' element={<Google />} />
            <Route path='/lesson13' element={<Lesson13 />} />
+           <Route path='/homework13' element={<Homework13 />} />
            <Route path='*' element='Page not found' />
          </Routes> 
        </Layout>
