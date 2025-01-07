@@ -1,18 +1,22 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Layout from 'components/Layout/Layout';
+// import Layout from 'components/Layout/Layout';
 import GlobalStyles from './styles/GlobalStyles';
-import About from 'pages/About/About';
-import Users from 'pages/Users/Users';
-import Home from 'pages/Home/Home'
-import Clients from 'pages/Clients/Clients'
-import Avacon from 'pages/Clients/components/Avacon/Avacon';
-import Netflix from 'pages/Clients/components/Netflix/Netflix';
-import Rebax from 'pages/Clients/components/Rebax/Rebax';
-import ClientsCw from 'pages/ClientsCw/ClientsCw';
-import Amazon from 'pages/ClientsCw/components/Amazon/Amazon';
-import Facebook from 'pages/ClientsCw/components/Facebook/Facebook';
-import Google from 'pages/ClientsCw/components/Google/Google';
+// import About from 'pages/About/About';
+// import Users from 'pages/Users/Users';
+// import Home from 'pages/Home/Home'
+// import Clients from 'pages/Clients/Clients'
+// import Avacon from 'pages/Clients/components/Avacon/Avacon';
+// import Netflix from 'pages/Clients/components/Netflix/Netflix';
+// import Rebax from 'pages/Clients/components/Rebax/Rebax';
+// import ClientsCw from 'pages/ClientsCw/ClientsCw';
+// import Amazon from 'pages/ClientsCw/components/Amazon/Amazon';
+// import Facebook from 'pages/ClientsCw/components/Facebook/Facebook';
+// import Google from 'pages/ClientsCw/components/Google/Google'
+import CreateEmployee from 'pages/CreateEmployee/CreateEmployee';
+import Employee from 'pages/Employee/Employee';
+import EmployeeLayout from 'components/EmployeeLayout/EmployeeLayout';
+import { EmployeeProvider } from 'components/EmployeeContext/EmployeeContext';
 
 //lessons
 // import Lesson06 from './lessons/Lesson06/Lesson06';
@@ -21,7 +25,7 @@ import Google from 'pages/ClientsCw/components/Google/Google';
 // import Lesson09 from 'lessons/Lesson09/Lesson09';
 // import Lesson10 from 'lessons/Lesson10/Lesson10';
 // import Lesson11 from 'lessons/Lesson11/Lesson11';
-import Lesson13 from 'lessons/Lesson13/Lesson13';
+// import Lesson13 from 'lessons/Lesson13/Lesson13';
 
 //homeworks
 // import Homework07 from './homeworks/Homework07/Homework07';
@@ -31,7 +35,7 @@ import Lesson13 from 'lessons/Lesson13/Lesson13';
 // import Homework10 from 'homeworks/Homework10/Homework10';
 // import Homework11cw from 'homeworks/Homework11cw/Homework11cw';
 // import Homework11 from 'homeworks/Homework11/Homework11';
-import Homework13 from 'homeworks/Homework13/Homework13';
+// import Homework13 from 'homeworks/Homework13/Homework13';
 
 //consultations
 // import Consultation04 from './consultations/Consultation04/Consultation04';
@@ -39,9 +43,17 @@ import Homework13 from 'homeworks/Homework13/Homework13';
 
 function App() {
   return (
-    <BrowserRouter> 
+    <BrowserRouter>
       <GlobalStyles />
-       <Layout>
+     <EmployeeProvider> 
+      <EmployeeLayout> 
+        <Routes>
+          <Route path="/" element={<CreateEmployee />} />
+          <Route path="/employee" element={<Employee />} />
+        </Routes>
+      </EmployeeLayout>
+      </EmployeeProvider> 
+       {/* <Layout>
          <Routes>
            <Route path='/' element={<Home />} />
            <Route path='/about' element={<About />} />
@@ -58,7 +70,7 @@ function App() {
            <Route path='/homework13' element={<Homework13 />} />
            <Route path='*' element='Page not found' />
          </Routes> 
-       </Layout>
+       </Layout> */}
       {/* <Lesson06 /> */}
       {/* <Lesson07 /> */}
       {/* <Lesson08 /> */}
@@ -74,7 +86,7 @@ function App() {
       {/* <Homework11 /> */}
       {/* <Consultation04 /> */}
       {/* <Consultation05 /> */}
-    </BrowserRouter> 
+    </BrowserRouter>
   );
 }
 

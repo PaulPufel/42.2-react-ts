@@ -1,4 +1,4 @@
-type ButtonType = "button" | 'submit' | "reset";
+type ButtonType = "button" | "submit" | "reset";
 
 export interface ButtonProps {
   name: string;
